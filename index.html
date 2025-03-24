@@ -1,36 +1,37 @@
 <!DOCTYPE html>
-<html lang="ar">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>موقع الاستثمار مع Daniel</title>
+    <title>Mo2025 Investment</title>
     <style>
-        /* التنسيقات الأساسية */
+        /* Basic Styles */
         body {
-            font-family: 'Tajawal', sans-serif;
+            font-family: 'Poppins', sans-serif;
             line-height: 1.6;
             margin: 0;
             padding: 0;
-            background-color: #f8f9fa;
-            color: #333;
+            background-color: #1a1a2e; /* Navy blue background */
+            color: #ffffff; /* White text */
         }
         header {
-            background: #007BFF;
+            background: url('https://via.placeholder.com/1200x400') no-repeat center center/cover;
             color: #fff;
-            padding: 60px 0;
+            padding: 100px 0;
             text-align: center;
         }
         header h1 {
-            font-size: 2.5rem;
+            font-size: 3rem;
             margin: 0;
+            font-weight: 700;
         }
         header p {
-            font-size: 1.2rem;
+            font-size: 1.5rem;
             margin: 10px 0 0;
         }
         nav {
-            background: #333;
-            padding: 10px;
+            background: rgba(0, 0, 0, 0.7);
+            padding: 15px;
             text-align: center;
             position: sticky;
             top: 0;
@@ -38,32 +39,36 @@
         }
         nav a {
             color: #fff;
-            margin: 0 15px;
+            margin: 0 20px;
             text-decoration: none;
             font-size: 1.1rem;
+            font-weight: 500;
         }
         nav a:hover {
             color: #007BFF;
         }
         section {
-            padding: 40px 20px;
+            padding: 60px 20px;
             margin: 20px auto;
-            max-width: 800px;
-            background: #fff;
-            border-radius: 10px;
+            max-width: 1000px;
+            background: rgba(255, 255, 255, 0.1);
+            border-radius: 15px;
+            backdrop-filter: blur(10px);
             box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
         }
         h2 {
             color: #007BFF;
-            font-size: 2rem;
+            font-size: 2.5rem;
             margin-bottom: 20px;
+            text-align: center;
         }
         ul {
             list-style-type: none;
             padding: 0;
         }
         ul li {
-            margin: 10px 0;
+            margin: 15px 0;
+            font-size: 1.1rem;
         }
         a {
             color: #007BFF;
@@ -73,156 +78,190 @@
             text-decoration: underline;
         }
         footer {
-            background: #333;
+            background: #0f0f1a;
             color: #fff;
             text-align: center;
-            padding: 20px 0;
-            margin-top: 40px;
+            padding: 30px 0;
+            margin-top: 60px;
         }
         .plan {
-            background-color: #fff;
-            padding: 20px;
-            border: 1px solid #ddd;
-            border-radius: 10px;
-            margin: 20px 0;
-            transition: transform 0.3s ease;
+            background: rgba(255, 255, 255, 0.1);
+            padding: 25px;
+            border-radius: 15px;
+            margin: 25px 0;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
         }
         .plan:hover {
-            transform: translateY(-5px);
-            box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
+            transform: translateY(-10px);
+            box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
         }
         .plan h3 {
             color: #007BFF;
-            font-size: 1.5rem;
-            margin-bottom: 10px;
+            font-size: 1.8rem;
+            margin-bottom: 15px;
+            text-align: center;
         }
         .plan ul {
             list-style-type: none;
             padding: 0;
         }
         .plan ul li {
-            margin: 8px 0;
+            margin: 10px 0;
+            font-size: 1.1rem;
         }
         .plan a {
             display: inline-block;
             background-color: #007BFF;
             color: #fff;
-            padding: 10px 20px;
+            padding: 12px 25px;
             border-radius: 5px;
             text-decoration: none;
-            margin-top: 15px;
+            margin-top: 20px;
+            font-size: 1.1rem;
+            transition: background-color 0.3s ease;
         }
         .plan a:hover {
             background-color: #0056b3;
         }
         #payment {
-            background-color: #f9f9f9;
-            padding: 20px;
-            border-radius: 10px;
-            margin-top: 20px;
+            background: rgba(255, 255, 255, 0.1);
+            padding: 30px;
+            border-radius: 15px;
+            margin-top: 30px;
         }
         #payment code {
-            background-color: #e9ecef;
-            padding: 5px;
-            border-radius: 4px;
+            background-color: rgba(0, 0, 0, 0.3);
+            padding: 8px;
+            border-radius: 5px;
             font-family: monospace;
+            color: #fff;
+        }
+        .contact-form {
+            max-width: 600px;
+            margin: 0 auto;
+        }
+        .contact-form input, .contact-form textarea {
+            width: 100%;
+            padding: 10px;
+            margin: 10px 0;
+            border: none;
+            border-radius: 5px;
+            background: rgba(255, 255, 255, 0.1);
+            color: #fff;
+        }
+        .contact-form button {
+            background: #007BFF;
+            color: #fff;
+            padding: 12px 25px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 1.1rem;
+            transition: background-color 0.3s ease;
+        }
+        .contact-form button:hover {
+            background: #0056b3;
         }
     </style>
-    <link href="https://fonts.googleapis.com/css2?family=Tajawal:wght@400;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;700&display=swap" rel="stylesheet">
 </head>
 <body>
 
     <!-- Header -->
     <header>
-        <h1>مرحبًا بك في Mo2025-Investment</h1>
-        <p> طريقك الآمن لاستثمارك الناجح وزيادة رأس مالك </p>
+        <h1>Welcome to Mo2025 Investment</h1>
+        <p>Your safe path to successful investment!</p>
     </header>
 
     <!-- Navigation -->
     <nav>
-        <a href="#about">من نحن</a>
-        <a href="#plans">الخطط الاستثمارية</a>
-        <a href="#why-us">لماذا نختارك؟</a>
-        <a href="#contact">اتصل بنا</a>
+        <a href="#about">About Us</a>
+        <a href="#plans">Investment Plans</a>
+        <a href="#why-us">Why Choose Us?</a>
+        <a href="#contact">Contact Us</a>
     </nav>
 
     <!-- About Us -->
     <section id="about">
-        <h2>من نحن</h2>
-        <p> نحن شركة صغيرة على الأنترنت مؤلفة من 10 مستثمرين محترفين مع خبرة تزيد عن 5 سنوات في مجال العقارات ، الأسهم ، العملات الرقمية</p>
+        <h2>About Us</h2>
+        <p>We are a small online company consisting of 10 professional investors with over 5 years of experience in real estate, stocks, and cryptocurrencies.</p>
     </section>
-    
+
     <!-- Investment Plans -->
     <section id="plans">
-        <h2>الخطط الاستثمارية</h2>
-        <p>نقدم مجموعة من الخطط الاستثمارية التي تناسب جميع المستويات. اختر الخطة التي تناسبك وابدأ رحلتك الاستثمارية اليوم!</p>
+        <h2>Investment Plans</h2>
+        <p>We offer a variety of investment plans to suit all levels. Choose the plan that fits you and start your investment journey today!</p>
         
         <div class="plan">
-            <h3>الخطة الأساسية</h3>
+            <h3>Basic Plan</h3>
             <ul>
-                <li><strong>المبلغ الأدنى:</strong> من 10 إلى 50 دولار</li>
-                <li><strong>الربح اليومي:</strong> 10% على رأس المال</li>
-                <li><strong>المدة:</strong> شهر واحد</li>
-                <li><strong>استرداد الأموال:</strong> بعد شهر واحد، سيتم إعادة رأس المال.</li>
+                <li><strong>Minimum Amount:</strong> $10 to $50</li>
+                <li><strong>Daily Profit:</strong> 10% on capital</li>
+                <li><strong>Duration:</strong> 1 month</li>
+                <li><strong>Refund:</strong> After 1 month, the capital will be returned.</li>
             </ul>
-            <a href="#payment">اشتراك في هذه الخطة</a>
+            <a href="#payment">Subscribe to this Plan</a>
         </div>
 
         <div class="plan">
-            <h3>الخطة المتوسطة</h3>
+            <h3>Intermediate Plan</h3>
             <ul>
-                <li><strong>المبلغ الأدنى:</strong> من 50 إلى 100 دولار</li>
-                <li><strong>الربح اليومي:</strong> 10% على رأس المال</li>
-                <li><strong>المدة:</strong> شهر واحد</li>
-                <li><strong>استرداد الأموال:</strong> بعد شهر واحد، سيتم إعادة رأس المال.</li>
+                <li><strong>Minimum Amount:</strong> $50 to $100</li>
+                <li><strong>Daily Profit:</strong> 10% on capital</li>
+                <li><strong>Duration:</strong> 1 month</li>
+                <li><strong>Refund:</strong> After 1 month, the capital will be returned.</li>
             </ul>
-            <a href="#payment">اشتراك في هذه الخطة</a>
+            <a href="#payment">Subscribe to this Plan</a>
         </div>
 
         <div class="plan">
-            <h3>الخطة المتقدمة</h3>
+            <h3>Advanced Plan</h3>
             <ul>
-                <li><strong>المبلغ الأدنى:</strong> من 100 إلى 500 دولار</li>
-                <li><strong>الربح اليومي:</strong> 10% على رأس المال</li>
-                <li><strong>المدة:</strong> شهر واحد</li>
-                <li><strong>استرداد الأموال:</strong> بعد شهر واحد، سيتم إعادة رأس المال.</li>
+                <li><strong>Minimum Amount:</strong> $100 to $500</li>
+                <li><strong>Daily Profit:</strong> 10% on capital</li>
+                <li><strong>Duration:</strong> 1 month</li>
+                <li><strong>Refund:</strong> After 1 month, the capital will be returned.</li>
             </ul>
-            <a href="#payment">اشتراك في هذه الخطة</a>
+            <a href="#payment">Subscribe to this Plan</a>
         </div>
     </section>
 
     <!-- Why Choose Us -->
     <section id="why-us">
-        <h2>لماذا تختار Mo2025-Investment؟</h2>
+        <h2>Why Choose Mo2025 Investment?</h2>
         <ul>
-            <li><strong>خبرة واسعة:</strong> أكثر من 5 سنوات في مجال الاستثمار.</li>
+            <li><strong>Extensive Experience:</strong> Over 5 years in the investment field.</li>
         </ul>
     </section>
 
     <!-- Payment Information -->
     <section id="payment">
-        <h2>معلومات الدفع</h2>
-        <p>للاستثمار معنا، يمكنك إرسال الأموال مباشرة إلى محفظتنا:</p>
+        <h2>Payment Information</h2>
+        <p>To invest with us, you can send funds directly to our wallet:</p>
         <ul>
             <li><strong>USDT (TRC20):</strong> <code>TXzmgbFRo8M7ECc3GadnHNQd6BjCDeufJG</code></li>
             <li><strong>PAYEER:</strong> <code>P1075824535</code></li>
         </ul>
-        <p><strong>ملاحظة:</strong> بعد تأكيد الإيداع، سيتم إرسال رأس المال بالإضافة إلى الأرباح إلى عنوان محفظة الإيداع.</p>
+        <p><strong>Note:</strong> After confirming the deposit, the capital along with profits will be sent to the deposit wallet address.</p>
     </section>
 
     <!-- Contact Us -->
     <section id="contact">
-        <h2>اتصل بنا</h2>
-        <p>هل لديك أسئلة أو تحتاج إلى مزيد من المعلومات؟ لا تتردد في التواصل معنا!</p>
-        <ul>
-            <li><a href="mailto:daneilhernandez1990@gmail.com">أرسل لنا بريدًا إلكترونيًا</a></li>
-            <li><a href="https://t.me/xxlxxf">تواصل معنا على Telegram</a></li>
-        </ul>
+        <h2>Contact Us</h2>
+        <p>Do you have questions or need more information? Feel free to contact us!</p>
+        <div class="contact-form">
+            <form action="#" method="post">
+                <input type="text" name="name" placeholder="Your Name" required>
+                <input type="email" name="email" placeholder="Your Email" required>
+                <textarea name="message" placeholder="Your Message" rows="5" required></textarea>
+                <button type="submit">Send Message</button>
+            </form>
+        </div>
     </section>
 
     <!-- Footer -->
     <footer>
-        <p>&copy; 2023 Mo2025-Investment. جميع الحقوق محفوظة.</p>
+        <p>&copy; 2023 Mo2025 Investment. All rights reserved.</p>
     </footer>
 
 </body>
